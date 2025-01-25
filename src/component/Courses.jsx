@@ -35,13 +35,27 @@ const courses = [
     image: '/linkedin-optimization.jpeg',
     badge: 'Skill Upgrade',
   },
+  {
+    title: 'Product Management',
+    description:
+      'Master the skills needed to build and launch successful products. Learn product strategy, user research, roadmapping, and stakeholder management to excel in your career.',
+    image: '/product-management.jpeg',
+    badge: 'Career Growth',
+  },
+  {
+    title: 'AI Program',
+    description:
+      'Unlock the power of Artificial Intelligence. Learn AI fundamentals, machine learning, and deep learning while working on real-world projects using cutting-edge tools like TensorFlow and PyTorch.',
+    image: '/ai-program.jpeg',
+    badge: 'Future Skills',
+  },
 ];
 
 const CourseCard = ({ title, description, image, badge }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className='bg-white text-gray-900 p-0 relative rounded-lg shadow-lg overflow-hidden border border-gray-200'
+      className='bg-white text-gray-900 p-0 relative rounded-lg shadow-lg overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:shadow-2xl'
     >
       {/* Top Badge */}
       <div className='absolute top-4 left-4 bg-teal-600 text-white text-xs font-semibold px-3 py-1 rounded-full z-10 shadow-md'>
@@ -95,7 +109,6 @@ const CourseCard = ({ title, description, image, badge }) => {
 
         {/* CTA Button */}
         <Link to={`/${title}`}>
-          {' '}
           <button className='bg-teal-600 hover:bg-teal-700 text-white py-2 px-4 w-full rounded-full text-sm font-semibold transition'>
             Enroll Now
           </button>
@@ -118,17 +131,6 @@ const Courses = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true, // Enable custom arrows
-    nextArrow: <FaArrowCircleRight className='text-black text-3xl' />, // Use custom next arrow
-    prevArrow: (
-      <FaArrowCircleLeft
-        style={{
-          transform: 'rotate(180deg)',
-          color: 'black',
-          marginRight: '10px',
-          zIndex: '50',
-        }}
-      />
-    ), // Use custom previous arrow
     responsive: [
       {
         breakpoint: 1024,
@@ -153,19 +155,14 @@ const Courses = () => {
   };
 
   return (
-    <section
-      className='min-h-screen text-gray-900 flex flex-col items-center justify-center py-10 px-6'
-      style={{
-        background: 'linear-gradient(to right, #007C7E, #28AEB1)', // Teal-inspired gradient background
-      }}
-    >
+    <section className='min-h-screen bg-gradient-to-r from-gray-900 to-teal-900 text-white py-36 px-6'>
       {/* Heading Section */}
-      <div className='text-center mb-10'>
+      <div className='text-center mb-12'>
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className='text-4xl font-extrabold mb-4 text-white'
+          className='text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-600'
         >
           Courses Offered by Devo Data Technologies
         </motion.h1>
@@ -173,14 +170,14 @@ const Courses = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className='text-lg text-teal-100'
+          className='text-lg text-gray-300'
         >
           Explore the skills to power your tech career.
         </motion.p>
       </div>
 
       {/* Course Cards Slider */}
-      <div className='w-full max-w-6xl'>
+      <div className='w-full max-w-6xl mx-auto'>
         <Slider {...settings}>
           {courses.map((course, index) => (
             <div key={index} className='px-2'>

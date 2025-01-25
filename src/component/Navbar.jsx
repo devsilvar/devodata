@@ -46,13 +46,13 @@ const Navbar = () => {
             }`}
           >
             <Link
-              to='/CyberSecurity'
+              to='/Cybersecurity'
               className='block px-4 py-2 hover:bg-teal-600 transition-all duration-300'
             >
               CyberSecurity
             </Link>
             <Link
-              to='/data-analysis'
+              to='/Data Analysis'
               className='block px-4 py-2 hover:bg-teal-600 transition-all duration-300'
             >
               Data Science
@@ -62,6 +62,19 @@ const Navbar = () => {
               className='block px-4 py-2 hover:bg-teal-600 transition-all duration-300'
             >
               Devops
+            </Link>
+
+            <Link
+              to='/Product Management'
+              className='block px-4 py-2 hover:bg-teal-600 transition-all duration-300'
+            >
+              Product Management
+            </Link>
+            <Link
+              to='/AI Program'
+              className='block px-4 py-2 hover:bg-teal-600 transition-all duration-300'
+            >
+              AI Program
             </Link>
           </div>
         </li>

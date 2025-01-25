@@ -5,7 +5,7 @@ import AboutCourse from '../component/AboutCourse';
 import Courses from '../component/Courses';
 import Program from '../component/Program';
 import FAQComponent from '../component/FAQComponent';
-
+import Whatsapp from '../component/Whatsapp';
 const Home = () => (
   <main>
     <HeroSection />
@@ -13,6 +13,7 @@ const Home = () => (
     <AboutCourse />
     <Courses />
     <Program />
+    <Whatsapp />
     <FAQComponent />
   </main>
 );

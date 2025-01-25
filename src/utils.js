@@ -191,4 +191,96 @@ export const coursesinfo = [
     price: 99,
     originalPrice: 149,
   },
+  {
+    id: "product-management",
+    title: "Product Management",
+    description: "Master the art of building and launching successful products. Learn essential skills in strategy, user research, roadmapping, and stakeholder management with our expert-led online course.",
+    image: "/product-management.jpeg",
+    whyChoose: [
+      "Learn the end-to-end process of product development.",
+      "Gain skills in creating impactful product roadmaps.",
+      "Stand out with a globally recognized Product Management certification."
+    ],
+    curriculum: [
+      {
+        title: "Module 1: Introduction to Product Management",
+        description: "Learn the core responsibilities and mindset of a successful product manager."
+      },
+      {
+        title: "Module 2: User Research and Persona Development",
+        description: "Understand your users and craft personas to guide product decisions."
+      },
+      {
+        title: "Module 3: Roadmapping and Feature Prioritization",
+        description: "Learn to create compelling roadmaps and prioritize features effectively."
+      },
+      {
+        title: "Module 4: Stakeholder Communication and Management",
+        description: "Master the art of collaborating with teams and managing stakeholder expectations."
+      }
+    ],
+    instructor: {
+      name: "John Doe",
+      bio: "Seasoned Product Manager with 10+ years of experience working at top tech companies.",
+      image: "/instructor-product-management.jpeg"
+    },
+    testimonials: [
+      {
+        text: "This course helped me land my first Product Manager role. The modules on roadmapping were a game changer!",
+        author: "Sophia Taylor"
+      },
+      {
+        text: "The real-world case studies made the learning process highly practical and engaging. Highly recommend it!",
+        author: "James Brown"
+      }
+    ],
+    price: 199,
+    originalPrice: 299
+  },
+  {
+    id: "ai-program",
+    title: "AI Program",
+    description: "Dive into the exciting world of Artificial Intelligence. Learn the fundamentals of AI, machine learning, and deep learning while working on real-world projects with cutting-edge tools like TensorFlow and PyTorch.",
+    image: "/ai-program.jpeg",
+    whyChoose: [
+      "Master AI concepts and practical implementation.",
+      "Work on real-world AI projects to build your portfolio.",
+      "Earn a certification to kickstart or advance your career in AI."
+    ],
+    curriculum: [
+      {
+        title: "Module 1: Introduction to Artificial Intelligence",
+        description: "Explore the basics of AI and its applications across various industries."
+      },
+      {
+        title: "Module 2: Machine Learning Essentials",
+        description: "Learn supervised and unsupervised learning techniques using Python."
+      },
+      {
+        title: "Module 3: Deep Learning Fundamentals",
+        description: "Understand neural networks and build models with TensorFlow and PyTorch."
+      },
+      {
+        title: "Module 4: AI in Action",
+        description: "Work on real-world projects, including image recognition and natural language processing."
+      }
+    ],
+    instructor: {
+      name: "Dr. Emily Carter",
+      bio: "AI Researcher with 8+ years of experience in machine learning and deep learning.",
+      image: "/instructor-ai-program.jpeg"
+    },
+    testimonials: [
+      {
+        text: "This course gave me hands-on experience with AI tools, and I secured a job in AI development after completing it.",
+        author: "Michael Johnson"
+      },
+      {
+        text: "The deep learning module was incredible. I now understand how to build AI models from scratch!",
+        author: "Linda Smith"
+      }
+    ],
+    price: 249,
+    originalPrice: 349
+  }
 ];

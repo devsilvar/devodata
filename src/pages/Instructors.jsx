@@ -34,16 +34,32 @@ const facilitators = [
     ],
     courses: ['Data Analysis'],
   },
+  {
+    id: 'product-management',
+    name: 'Michael Brown',
+    bio: 'Product Manager with 9+ years of experience in agile product development.',
+    image: '/instructor-product-management.jpeg',
+    expertise: ['Product Strategy', 'User Research', 'Agile Methodologies'],
+    courses: ['Product Management'],
+  },
+  {
+    id: 'ai',
+    name: 'Emily Davis',
+    bio: 'AI Specialist with 6+ years of experience in machine learning and NLP.',
+    image: '/instructor-ai.jpeg',
+    expertise: ['Machine Learning', 'Natural Language Processing', 'AI Ethics'],
+    courses: ['Artificial Intelligence'],
+  },
 ];
 
 const Instructors = () => {
   return (
-    <div className='min-h-screen bg-gray-50 py-10 px-6'>
+    <div className='min-h-screen bg-gradient-to-r from-gray-900 to-teal-900 py-16 px-6'>
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className='text-4xl font-bold text-gray-900 text-center mb-10'
+        className='text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-600 text-center mb-12'
       >
         Meet Our Facilitators
       </motion.h1>
@@ -55,7 +71,8 @@ const Instructors = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className='bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200'
+            whileHover={{ scale: 1.05 }}
+            className='bg-gray-800 rounded-lg shadow-xl overflow-hidden border border-teal-700 transform transition-transform duration-300 hover:shadow-2xl'
           >
             {/* Facilitator Image */}
             <img
@@ -66,17 +83,17 @@ const Instructors = () => {
 
             {/* Facilitator Details */}
             <div className='p-6'>
-              <h2 className='text-2xl font-bold text-gray-900 mb-2'>
+              <h2 className='text-2xl font-bold text-teal-400 mb-2'>
                 {facilitator.name}
               </h2>
-              <p className='text-gray-700 mb-4'>{facilitator.bio}</p>
+              <p className='text-gray-300 mb-4'>{facilitator.bio}</p>
 
               {/* Expertise */}
               <div className='mb-4'>
-                <h3 className='text-lg font-semibold text-gray-900 mb-2'>
+                <h3 className='text-lg font-semibold text-teal-400 mb-2'>
                   Areas of Expertise
                 </h3>
-                <ul className='list-disc list-inside text-gray-700'>
+                <ul className='list-disc list-inside text-gray-300'>
                   {facilitator.expertise.map((skill, index) => (
                     <li key={index}>{skill}</li>
                   ))}
@@ -85,10 +102,10 @@ const Instructors = () => {
 
               {/* Courses */}
               <div>
-                <h3 className='text-lg font-semibold text-gray-900 mb-2'>
+                <h3 className='text-lg font-semibold text-teal-400 mb-2'>
                   Courses
                 </h3>
-                <ul className='list-disc list-inside text-gray-700'>
+                <ul className='list-disc list-inside text-gray-300'>
                   {facilitator.courses.map((course, index) => (
                     <li key={index}>{course}</li>
                   ))}

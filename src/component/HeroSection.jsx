@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className='relative bg-cover bg-center h-auto lg:h-[80vh] flex items-center justify-center'
+      className='relative bg-cover bg-center h-auto lg:h-[90vh] flex items-center justify-center'
       style={{
         backgroundImage: `linear-gradient(to right, #0A4F91, #2EC9D9)`, // Gradient extracted from the uploaded image
       }}
@@ -33,14 +33,14 @@ const HeroSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className='bg-white flex-1 text-black rounded-lg p-4 md:p-8 shadow-xl w-full md:w-auto md:max-w-sm'>
-          <h3 className='text-red-600 text-lg font-bold flex items-center mb-4'>
-            <span className='mr-2 text-3xl'>📅</span> Next Cohort:
+        <div className='bg-white flex-1 text-black rounded-lg p-4 md:p-7 shadow-xl w-full md:w-auto md:max-w-sm'>
+          <h3 className='text-red-600 text-2xl font-bold flex items-center mb-4'>
+            <span className='mr-2 text-4xl'>📅</span> Next Cohort:
           </h3>
-          <p className='text-xl md:text-3xl font-semibold mb-2 leading-tight'>
+          <p className='text-xl md:text-4xl font-semibold my-6 leading-tight'>
             Wednesday <br /> February 3, 2025
           </p>
-          <p className='text-red-600 font-medium text-sm md:text-base'>
+          <p className='text-red-600 font-medium text-sm md:text-xl'>
             {timeLeft.days}days {timeLeft.hours}h {timeLeft.minutes}m{' '}
             {timeLeft.seconds}s
           </p>
